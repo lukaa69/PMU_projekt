@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PMU_projekt.NewtonsLawPage"
+             Title="Newtonov zakon">
+
+    <StackLayout Padding="20">
+        <Label Text="Newtonov drugi zakon - Izračun sile" FontSize="24" HorizontalOptions="Center" />
+        <Entry x:Name="MassEntry" Placeholder="Unesite masu (kg)" Keyboard="Numeric" />
+        <Entry x:Name="AccelerationEntry" Placeholder="Unesite ubrzanje (m/s²)" Keyboard="Numeric" />
+        <Button Text="Izračunaj" Clicked="OnCalculateNewtonsLaw" />
+        <Label x:Name="ResultLabel" FontSize="18" TextColor="Blue" />
+    </StackLayout>
+</ContentPage>

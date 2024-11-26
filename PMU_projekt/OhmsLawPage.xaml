@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PMU_projekt.OhmsLawPage"
+             Title="Ohmov zakon">
+
+    <StackLayout Padding="20">
+        <Label Text="Ohmov zakon - Izračun struje" FontSize="24" HorizontalOptions="Center" />
+        <Entry x:Name="VoltageEntry" Placeholder="Unesite napon (V)" Keyboard="Numeric" />
+        <Entry x:Name="ResistanceEntry" Placeholder="Unesite otpor (Ω)" Keyboard="Numeric" />
+        <Button Text="Izračunaj" Clicked="OnCalculateOhmsLaw" />
+        <Label x:Name="ResultLabel" FontSize="18" TextColor="Blue" />
+    </StackLayout>
+</ContentPage>
